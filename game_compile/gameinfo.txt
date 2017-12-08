@@ -1,0 +1,60 @@
+"GameInfo"
+{
+	game	"Meta Construct - Compile"
+	type multiplayer_only
+
+	nomodels 1
+	nohimodel 1
+	nocrosshair 0
+	hidden_maps
+	{
+		"test_speakers"		1
+		"test_hardware"		1
+	}
+	nodegraph 0
+	GameData	"__INSTALL_DRIVE__/steamapps/common/Team Fortress 2/bin/tf.fgd"
+	InstancePath "maps/instances/"
+	advcrosshair 1
+
+	"GameData"		"__META_FILE_DRIVE__/metastruct/mapfiles/metastruct.fgd"
+	"GameData0"		"__INSTALL_DRIVE__/steamapps/common/GarrysMod/bin/garrysmod.fgd"
+	"GameData1"		"__INSTALL_DRIVE__/steamapps/common/Source SDK Base 2013 Multiplayer/bin/base.fgd"
+	"GameData2"		"__INSTALL_DRIVE__/steamapps/common/Source SDK Base 2013 Multiplayer/bin/cstrike.fgd"
+	"GameData3"		"__INSTALL_DRIVE__/steamapps/common/Source SDK Base 2013 Multiplayer/bin/halflife2.fgd"
+	"InstancePath" 	"__META_FILE_DRIVE__/metastruct/mapfiles"
+
+	FileSystem
+	{
+		SteamAppId				4000 // 218
+		ToolsAppId				211
+
+		SearchPaths
+		{
+			game				"__META_FILE_DRIVE__/metastruct/mapdata/"
+
+			game				"__INSTALL_DRIVE__/steamapps/common/Counter-Strike Source/cstrike/cstrike_pak.vpk"
+			game				"__INSTALL_DRIVE__/steamapps/common/Team Fortress 2/tf/tf2_textures.vpk"
+			game				"__INSTALL_DRIVE__/steamapps/common/Team Fortress 2/tf/tf2_sound_misc.vpk"
+
+			//game				"__INSTALL_DRIVE__/SteamApps/common/Team Fortress 2/tf_misc"
+			game				"__INSTALL_DRIVE__/steamapps/common/Team Fortress 2/tf/tf2_misc.vpk"
+
+			game				"__INSTALL_DRIVE__/steamapps/common/GarrysMod/garrysmod/garrysmod.vpk"
+			game				"__INSTALL_DRIVE__/steamapps/common/GarrysMod/sourceengine/hl2_textures.vpk"
+			game				"__INSTALL_DRIVE__/steamapps/common/GarrysMod/sourceengine/hl2_sound_misc.vpk"
+			game				"__INSTALL_DRIVE__/steamapps/common/GarrysMod/sourceengine/hl2_misc.vpk"
+			platform			|all_source_engine_paths|platform/platform_misc.vpk
+
+
+			mod+mod_write+default_write_path		|gameinfo_path|.
+
+			game+game_write		"__INSTALL_DRIVE__/steamapps/common/GarrysMod/garrysmod"
+
+			gamebin				"__INSTALL_DRIVE__/steamapps/common/GarrysMod/garrysmod/bin"
+
+			game				|all_source_engine_paths|hl2
+			platform			|all_source_engine_paths|platform
+			game+download	"__INSTALL_DRIVE__/steamapps/common/GarrysMod/garrysmod/download"
+		}
+	}
+}
