@@ -1,4 +1,4 @@
-import os
+import os, urllib.request
 user_steam_directory = ""
 
 
@@ -19,4 +19,8 @@ def config_build():
         build = build.replace(old_dir, new_dir)
         file.write(build)
 
-
+def reset_config():
+    dl = urllib.request.URLopener()
+    dl.retrieve("https://raw.githubusercontent.com/KabusIblis/map-toolkit/master/game_compile/gameinfo.txt",
+                "game_compile/gameinfo.txt") # shoddy but should work
+    pass
